@@ -41,4 +41,12 @@ class AppFonts {
         fontSize: fontSize,
         color: color,
       );
+       static TextStyle quicksandSemiBold600(
+          [double fontSize = 14, Color color = Colors.black]) =>
+      TextStyle(
+        fontFamily: quicksandSemiBold,
+        fontWeight: FontWeight.w600,
+        fontSize: fontSize,
+        color: color,
+      );
 }

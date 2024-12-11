@@ -314,13 +314,65 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              // Spacer(),
             ],
           ),
         ),
+      bottomNavigationBar:   BottomNavigationBar(
+              type: BottomNavigationBarType.fixed,
+                items: [
+                   BottomNavigationBarItem(
+                    icon: 
+                    Image(
+                      image: AssetImage(AppImages.homeIconItem),
+                      height: 24,
+                      width: 24,
+                      ),
+                      label: 'Home',
+                      ),
+                    BottomNavigationBarItem(icon: 
+                      Image(image: 
+                        AssetImage(AppImages.chatIconItem),
+                        height: 24,
+                        width: 24,
+                      ),
+                      label: 'Chat',
+                    ),
+                     BottomNavigationBarItem(icon: 
+                      Image(image: 
+                        AssetImage(AppImages.notifiicationItem),
+                        height: 24,
+                        width: 24,
+                      ),
+                      label: 'Thông báo',
+                    ),
+                     BottomNavigationBarItem(icon: 
+                      Image(image: 
+                        AssetImage(AppImages.userIconItem),
+                        height: 24,
+                        width: 24,
+                      ),
+                      label: 'Cá nhân',
+                    ),
+                ],
+             )
       ),
     );
   }
 }
+   TextStyle _getStyleLabel() => const TextStyle(
+      fontFamily: 'Quicksand-SemiBold',
+      fontSize: 12,
+      height: 16 / 12,
+      fontWeight: FontWeight.w600
+      );
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
