@@ -15,7 +15,7 @@ class SecondScreen extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                decoration: BoxDecoration(
+                decoration:const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(AppImages.backGroundImage),
                     fit: BoxFit.fitHeight,
@@ -138,10 +138,13 @@ class SecondScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(16)),
                                 child: Column(
                                   children: [
-                                    Image(
-                                      image: AssetImage(AppImages.carImage),
-                                      height: 30,
-                                      width: 25.24,
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Image(
+                                        image: AssetImage(AppImages.carImage),
+                                        height: 30,
+                                        width: 25.24,
+                                      ),
                                     ),
                                     Text(
                                       'Biển số',
@@ -166,11 +169,14 @@ class SecondScreen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(16)),
                                   child: Column(
                                     children: [
-                                      Image(
-                                        image:
-                                            AssetImage(AppImages.driverImage),
-                                        height: 40,
-                                        width: 40,
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 4),
+                                        child: Image(
+                                          image:
+                                              AssetImage(AppImages.driverImage),
+                                          height: 40,
+                                          width: 40,
+                                        ),
                                       ),
                                       Text(
                                         'Tài xế',
@@ -194,10 +200,13 @@ class SecondScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(16)),
                                 child: Column(
                                   children: [
-                                    Image(
-                                      image: AssetImage(AppImages.studentImage),
-                                      height: 28,
-                                      width: 28,
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Image(
+                                        image: AssetImage(AppImages.studentImage),
+                                        height: 28,
+                                        width: 28,
+                                      ),
                                     ),
                                     Text(
                                       'Học sinh',
@@ -750,7 +759,8 @@ class SecondScreen extends StatelessWidget {
           floatingActionButton: Material(
             child: InkWell(
               borderRadius: BorderRadius.circular(16),
-              onTap: () {},
+              onTap: () {
+              },
               child: Container(
                 height: 48,
                 width: 138,
@@ -775,7 +785,7 @@ class SecondScreen extends StatelessWidget {
                     Text(
                       'Điểm danh',
                       style:
-                          AppFonts.quicksandBold600(16, AppColors.whiteColor),
+                          AppFonts.quicksandSemiBold600(16, AppColors.whiteColor),
                     ),
                   ],
                 ),
