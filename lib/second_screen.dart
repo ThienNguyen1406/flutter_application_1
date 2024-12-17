@@ -10,6 +10,7 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+       debugShowCheckedModeBanner: false,
         home: Scaffold(
           body: SingleChildScrollView(
           child: Stack(
@@ -88,7 +89,7 @@ class SecondScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(5),
+                                  padding:  EdgeInsets.all(5),
                                   child: Image(
                                     image: AssetImage(AppImages.addImage),
                                     width: 15,

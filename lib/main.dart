@@ -19,14 +19,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _currentIndex = 0;
   final tabScreen = [
-    ThirdScreen(),
-    SecondScreen(),
+    const ThirdScreen(),
+    const SecondScreen(),
     Container(),
     Container(),
   ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,
