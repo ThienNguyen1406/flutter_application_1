@@ -7,4 +7,6 @@ class AppColors {
   static const boxColor3 = Color(0xffD0E3F9);
   static const radiusColor = Color(0xffF3F3F3);
   static const whiteColor = Colors.white;
+
+  
 }

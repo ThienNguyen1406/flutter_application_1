@@ -49,4 +49,13 @@ class AppFonts {
         fontSize: fontSize,
         color: color,
       );
+      static TextStyle quicksandMedium600(
+          [double fontSize = 14, Color color = Colors.black]) =>
+      TextStyle(
+        fontFamily: quicksandMedium,
+        fontWeight: FontWeight.w600,
+        fontSize: fontSize,
+        color: color,
+      );
+     
 }
