@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _currentIndex = 0;
-  final tabs = [
+  final tabScreen = [
     ThirdScreen(),
     SecondScreen(),
     Container(),
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: tabs[
+        body: tabScreen[
           _currentIndex
         ],
           bottomNavigationBar: BottomNavigationBar(
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
                 _currentIndex = index;
                 setState(() {});
               },
-              items: [
+              items: const [
                 BottomNavigationBarItem(
                     icon: Image(
                       image: AssetImage(AppImages.homeIconItem),
